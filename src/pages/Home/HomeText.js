@@ -1,4 +1,18 @@
 const data = {
+  headline: [
+    {
+      icon: "idk",
+      text: "<b>Eliminate</b> the hangout that never happens",
+    },
+    {
+      icon: "idk",
+      text: `"We should hangout soon?"`,
+    },
+    {
+      icon: "idk",
+      text: `"It was nice seeing you!"`,
+    },
+  ],
   features: [
     {
       icon: "idk",

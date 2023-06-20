@@ -7,9 +7,15 @@ const Home = () => {
   return (
     <div className="App">
       <Header />
-      {HomeText.features.map(({ icon, text }, i) => (
-        <KeyFeature key={i} text={text} icon={icon} />
-      ))}
+      <main>
+        {HomeText.headline.map(({ icon, text }, i) => (
+          <KeyFeature key={i} text={text} icon={icon} />
+        ))}
+
+        {HomeText.features.map(({ icon, text }, i) => (
+          <KeyFeature key={i} text={text} icon={icon} />
+        ))}
+      </main>
     </div>
   );
 };
