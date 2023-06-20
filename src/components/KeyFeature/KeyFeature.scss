@@ -1,0 +1,23 @@
+.key-feature {
+  border: 1px solid #661814;
+  background-color: #fff0d899;
+  color: #661814;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 55px;
+  padding: 30px;
+  height: 250px;
+  width: 250px;
+
+  .icon {
+    padding-bottom: 15px;
+  }
+
+  b {
+    font-weight: 600;
+  }
+}

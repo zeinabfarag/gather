@@ -1,6 +1,6 @@
 import "./Home.scss";
 import Header from "../../components/Header/Header";
-import KeyFeature from "../../KeyFeature/KeyFeature";
+import KeyFeature from "../../components/KeyFeature/KeyFeature";
 import HomeText from "./HomeText";
 
 const Home = () => {

@@ -13,6 +13,7 @@ const data = {
       text: `"It was nice seeing you!"`,
     },
   ],
+
   features: [
     {
       icon: "idk",
