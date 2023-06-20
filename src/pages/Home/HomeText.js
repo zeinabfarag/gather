@@ -10,7 +10,7 @@ const data = {
     },
     {
       icon: "idk",
-      text: "<b> Create spontaneous </b> moments with your loved ones",
+      text: "<b> Create </b> spontaneous moments with your loved ones",
     },
   ],
 };
