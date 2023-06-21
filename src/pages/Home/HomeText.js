@@ -13,7 +13,18 @@ const data = {
       text: `"It was nice seeing you!"`,
     },
   ],
-
+  taglines: [
+    {
+      icon: "idk",
+      text: "Streamline your social life with <b>Gather</b>",
+      subtext: "The antidote to scheduling chaos",
+    },
+    {
+      icon: "idk",
+      text: "<b>Say goodbye</b> to planning frustration",
+      subtext: "Say hello to stress-free quality time",
+    },
+  ],
   features: [
     {
       icon: "idk",
