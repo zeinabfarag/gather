@@ -1,12 +1,12 @@
 import "./Header.scss";
 import Button from "../Button/Button";
 import { createElement } from "react";
-import { ReactComponent as GatherLogo } from "../../assets/gather-logo.svg";
+import { Logo } from "../../assets";
 
 const Header = () => {
   return (
     <div className="header">
-      <h1>Gather</h1>
+      <div className="header-logo">{createElement(Logo)}</div>
       <Button text="Join Waitlist" />
     </div>
   );

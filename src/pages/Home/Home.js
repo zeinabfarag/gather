@@ -20,7 +20,7 @@ const Home = () => {
         </div>
 
         {/* Headline Image */}
-        <div className="headline-im">{createElement(Illustration)}</div>
+        <div className="headline-image">{createElement(Illustration)}</div>
 
         {/* Arrow */}
         <div className="arrow">{createElement(Arrow)}</div>
