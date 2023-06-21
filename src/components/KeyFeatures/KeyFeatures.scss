@@ -1,0 +1,35 @@
+.key-features {
+  text-align: center;
+  h1 {
+    padding: 100px 0px;
+  }
+  .key-feature {
+    font-size: 20px;
+    border: 1.5px solid var(--wine);
+    background-color: var(--cream);
+    color: var(--wine);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 55px;
+    padding: 30px;
+    height: 220px;
+    width: 220px;
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+
+    &-icon {
+      padding-bottom: 30px;
+    }
+    &-text {
+      width: 200px;
+    }
+
+    span {
+      font-style: italic;
+      font-weight: 600;
+    }
+  }
+}

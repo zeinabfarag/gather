@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Livvic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
-  --cream: #FCEDD4;
-  --wine: #811E18;
+  --lightcream: #fff9ef;
+  --cream: #fff0d899;
+  --wine: #661814;
+}
 
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 html {
@@ -48,12 +53,21 @@ p {
 body {
   box-sizing: border-box;
   margin: 0;
-  height: 100vh;
+  font-family: "Livvic", sans-serif;
+  background-color: var(--lightcream);
+  color: var(--wine);
+}
+
+// Global, Flex, Column
+.flx-clmn-cntr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-family: 'Livvic', sans-serif;
-  background-color: var(--cream);
-  color: var(--wine);
+}
+
+.bold-span {
+  span {
+    font-style: italic;
+    font-weight: bold;
+  }
 }

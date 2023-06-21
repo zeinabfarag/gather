@@ -1,0 +1,11 @@
+.headlines {
+    margin: 3vh 0;
+    gap: 2vh;
+    max-width: 75vw;
+
+    :first-child {
+        text-align: center;
+        font-size: 1.5rem;
+        gap: 3vh;
+    }
+}
