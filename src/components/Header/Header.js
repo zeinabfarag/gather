@@ -5,9 +5,11 @@ import { Logo } from "../../assets";
 
 const Header = () => {
   return (
-    <div className="header">
-      <div className="header-logo">{createElement(Logo)}</div>
-      <Button text="Join Waitlist" />
+    <div className="header-container">
+      <div className="header">
+        <div className="header-logo">{createElement(Logo)}</div>
+        <Button text="Join Waitlist" />
+      </div>
     </div>
   );
 };
