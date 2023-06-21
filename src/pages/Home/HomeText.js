@@ -1,4 +1,6 @@
 import { ReactComponent as Heart } from "../../assets/gather-heart.svg";
+import { ReactComponent as Clock } from "../../assets/gather-clock.svg";
+import { ReactComponent as Calendar } from "../../assets/gather-calendar.svg";
 
 const data = {
   headline: [
@@ -29,11 +31,11 @@ const data = {
   ],
   features: [
     {
-      icon: Heart,
+      icon: Clock,
       text: " <span> Customize </span> your schedule sync with unique social circles.",
     },
     {
-      icon: Heart,
+      icon: Calendar,
       text: "<span> Plan </span> the entire hang out in app, and directly <span> sync </span>  it to your calendar",
     },
     {

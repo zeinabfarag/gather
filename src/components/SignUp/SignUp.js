@@ -1,7 +1,11 @@
 import "./SignUp.scss";
 
 const SignUp = () => {
-  return <div className="signup">Sign Up</div>;
+  return (
+    <div className="signup">
+      <div className="signup-"></div>
+    </div>
+  );
 };
 
 export default SignUp;
