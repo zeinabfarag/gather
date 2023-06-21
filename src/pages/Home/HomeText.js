@@ -20,12 +20,12 @@ const data = {
   taglines: [
     {
       icon: Wave,
-      text: "Streamline your social life with <b>Gather</b>",
+      text: "<span>Streamline</span> your social life with <span>Gather</span>",
       subtext: "The antidote to scheduling chaos",
     },
     {
       icon: HandWave,
-      text: "<b>Say goodbye</b> to planning frustration",
+      text: "<span>Say goodbye</span> to planning frustration",
       subtext: "Say hello to stress-free quality time",
     },
   ],
