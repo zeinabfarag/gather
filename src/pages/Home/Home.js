@@ -7,7 +7,7 @@ import Tagline from "../../components/Tagline/Tagline";
 
 const Home = () => {
   return (
-    <div className="App">
+    <div className="home">
       <Header />
       <main>
         {/* Headline */}
@@ -24,7 +24,8 @@ const Home = () => {
           ))}
         </div>
 
-        <div className="">
+        {/* Key Features */}
+        <div className="keyfeatures-section">
           {HomeText.features.map(({ icon, text }, i) => (
             <KeyFeature key={i} text={text} icon={icon} />
           ))}

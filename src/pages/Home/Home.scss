@@ -1,11 +1,9 @@
-.Home {
+.home {
     main {
         width: 75vw;
-    }
-
-    .Headline-Section {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 }
