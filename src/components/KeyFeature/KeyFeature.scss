@@ -1,5 +1,5 @@
 .key-feature {
-  border: 1px solid var(--wine);
+  border: 1.5px solid var(--wine);
   background-color: var(--cream);
   color: var(--wine);
   margin-bottom: 50px;
@@ -20,7 +20,7 @@
     width: 150px;
   }
 
-  b {
+  span {
     font-style: italic;
     font-weight: 600;
   }

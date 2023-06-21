@@ -3,6 +3,7 @@ import Header from "../../components/Header/Header";
 import KeyFeature from "../../components/KeyFeature/KeyFeature";
 import HomeText from "./HomeText";
 import Headline from "../../components/Headline/Headline";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         {HomeText.features.map(({ icon, text }, i) => (
           <KeyFeature key={i} text={text} icon={icon} />
         ))}
+        <Footer />
       </main>
     </div>
   );
