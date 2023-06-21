@@ -6,6 +6,8 @@ import Footer from "../../components/Footer/Footer";
 import Tagline from "../../components/Tagline/Tagline";
 import SignUp from "../../components/SignUp/SignUp";
 import KeyFeatures from "../../components/KeyFeatures/KeyFeatures";
+import { createElement } from "react";
+import { Illustration, Arrow } from "../../assets";
 
 const Home = () => {
   return (
@@ -17,10 +19,19 @@ const Home = () => {
           <Headline headlines={HomeText.headline} />
         </div>
 
+        {/* Headline Image */}
+        <div className="headline-im">{createElement(Illustration)}</div>
+
+        {/* Arrow */}
+        <div className="headline-im">{createElement(Arrow)}</div>
+
         {/* Tag Lines */}
         <div className="tagline-section">
           <Tagline taglines={HomeText.taglines} />
         </div>
+
+        {/* Arrow */}
+        <div className="headline-im">{createElement(Arrow)}</div>
 
         {/* Key Features */}
         <div className="keyfeatures-section">

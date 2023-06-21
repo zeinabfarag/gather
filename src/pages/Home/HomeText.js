@@ -6,7 +6,7 @@ const data = {
   headline: [
     {
       icon: Coffee,
-      text: "<b>Eliminate</b> the hangout that never happens",
+      text: "<span> Eliminate </span> the hangout that never happens",
     },
     {
       icon: X,
