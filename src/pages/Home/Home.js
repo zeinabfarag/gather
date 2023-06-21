@@ -23,7 +23,7 @@ const Home = () => {
         <div className="headline-im">{createElement(Illustration)}</div>
 
         {/* Arrow */}
-        <div className="headline-im">{createElement(Arrow)}</div>
+        <div className="arrow">{createElement(Arrow)}</div>
 
         {/* Tag Lines */}
         <div className="tagline-section">
@@ -31,7 +31,7 @@ const Home = () => {
         </div>
 
         {/* Arrow */}
-        <div className="headline-im">{createElement(Arrow)}</div>
+        <div className="arrow">{createElement(Arrow)}</div>
 
         {/* Key Features */}
         <div className="keyfeatures-section">
