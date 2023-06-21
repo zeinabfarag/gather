@@ -4,9 +4,9 @@ import { createElement } from "react";
 
 const Headline = ({ headlines }) => {
   return (
-    <div className="headline flx-clmn-cntr">
+    <div className="headlines flx-clmn-cntr">
       {headlines.map(({ icon, text }, i) => (
-        <div className="headline-feature" key={i}>
+        <div className="headline flx-clmn-cntr bold-span" key={i}>
           <div className="headline-icon">{createElement(icon)}</div>
           <div
             className="headline-text"
