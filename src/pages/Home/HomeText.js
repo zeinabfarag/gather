@@ -1,28 +1,30 @@
 import { Heart, Clock, Calendar } from "../../assets";
+import { Coffee, Check, X } from "../../assets";
+import { Wave, HandWave } from "../../assets";
 
 const data = {
   headline: [
     {
-      icon: "idk",
+      icon: Coffee,
       text: "<b>Eliminate</b> the hangout that never happens",
     },
     {
-      icon: "idk",
+      icon: X,
       text: `"We should hangout soon?"`,
     },
     {
-      icon: "idk",
+      icon: Check,
       text: `"It was nice seeing you!"`,
     },
   ],
   taglines: [
     {
-      icon: "idk",
+      icon: Wave,
       text: "Streamline your social life with <b>Gather</b>",
       subtext: "The antidote to scheduling chaos",
     },
     {
-      icon: "idk",
+      icon: HandWave,
       text: "<b>Say goodbye</b> to planning frustration",
       subtext: "Say hello to stress-free quality time",
     },
