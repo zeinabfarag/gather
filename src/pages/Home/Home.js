@@ -1,10 +1,11 @@
 import "./Home.scss";
 import Header from "../../components/Header/Header";
-import KeyFeature from "../../components/KeyFeature/KeyFeature";
 import HomeText from "./HomeText";
 import Headline from "../../components/Headline/Headline";
 import Footer from "../../components/Footer/Footer";
 import Tagline from "../../components/Tagline/Tagline";
+import SignUp from "../../components/SignUp/SignUp";
+import KeyFeatures from "../../components/KeyFeatures/KeyFeatures";
 
 const Home = () => {
   return (
@@ -27,12 +28,18 @@ const Home = () => {
 
         {/* Key Features */}
         <div className="keyfeatures-section">
-          {HomeText.features.map(({ icon, text }, i) => (
-            <KeyFeature key={i} text={text} icon={icon} />
-          ))}
+          <KeyFeatures features={HomeText.features} />
+        </div>
+
+        {/* Sign Up*/}
+        <div className="signup-section">
+          <SignUp />
         </div>
       </main>
-      <Footer />
+      {/* Footer */}
+      <div className="footer-section">
+        <Footer />
+      </div>
     </div>
   );
 };
