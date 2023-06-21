@@ -6,7 +6,9 @@ const Footer = () => {
       <a className="footer-link" href="https://google.com">
         Contact us
       </a>
-      <div className="footer-text">Gather. 2023. All Rights Reserved.</div>
+      <div className="footer-text">
+        Gather. {new Date().getFullYear()}. All Rights Reserved.
+      </div>
     </div>
   );
 };
