@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="header">
       <h1>Gather</h1>
-      <Button btntext="Join Waitlist" />
+      <Button text="Join Waitlist" />
     </div>
   );
 };
