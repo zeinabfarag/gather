@@ -1,6 +1,4 @@
-import { ReactComponent as Heart } from "../../assets/gather-heart.svg";
-import { ReactComponent as Clock } from "../../assets/gather-clock.svg";
-import { ReactComponent as Calendar } from "../../assets/gather-calendar.svg";
+import { Heart, Clock, Calendar } from "../../assets";
 
 const data = {
   headline: [
