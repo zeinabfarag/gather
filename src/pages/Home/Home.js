@@ -6,6 +6,8 @@ import Footer from "../../components/Footer/Footer";
 import Tagline from "../../components/Tagline/Tagline";
 import SignUp from "../../components/SignUp/SignUp";
 import KeyFeatures from "../../components/KeyFeatures/KeyFeatures";
+import { Arrow } from "../../assets";
+import { createElement } from "react";
 
 const Home = () => {
   return (
@@ -26,6 +28,9 @@ const Home = () => {
         <div className="keyfeatures-section">
           <KeyFeatures features={HomeText.features} />
         </div>
+
+        {/* Arrow */}
+        <div className="arrow">{createElement(Arrow)}</div>
 
         {/* Sign Up*/}
         <div className="signup-section">
