@@ -2,7 +2,7 @@ import "./Headline.scss";
 
 const Headline = ({ text, icon }) => {
   return (
-    <div className="Headline">
+    <div className="headline flx-clmn-cntr">
       <p>{icon}</p>
       <div dangerouslySetInnerHTML={{ __html: text }} />
     </div>

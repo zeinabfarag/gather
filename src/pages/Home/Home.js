@@ -3,19 +3,32 @@ import Header from "../../components/Header/Header";
 import KeyFeature from "../../components/KeyFeature/KeyFeature";
 import HomeText from "./HomeText";
 import Headline from "../../components/Headline/Headline";
+import Tagline from "../../components/Tagline/Tagline";
 
 const Home = () => {
   return (
     <div className="App">
       <Header />
       <main>
-        {HomeText.headline.map(({ icon, text }, i) => (
-          <Headline key={i} text={text} icon={icon} />
-        ))}
+        {/* Headline */}
+        <div className="headline-section">
+          {HomeText.headline.map(({ icon, text }, i) => (
+            <Headline key={i} text={text} icon={icon} />
+          ))}
+        </div>
 
-        {HomeText.features.map(({ icon, text }, i) => (
-          <KeyFeature key={i} text={text} icon={icon} />
-        ))}
+        {/* Tag Lines */}
+        <div className="tagline-section">
+          {HomeText.taglines.map(({ icon, text, subtext }, i) => (
+            <Tagline key={i} text={text} icon={icon} subtext={subtext} />
+          ))}
+        </div>
+
+        <div className="">
+          {HomeText.features.map(({ icon, text }, i) => (
+            <KeyFeature key={i} text={text} icon={icon} />
+          ))}
+        </div>
       </main>
     </div>
   );

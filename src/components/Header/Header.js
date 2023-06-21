@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 
 const Header = () => {
   return (
-    <div className="Header">
+    <div className="header">
       <h1>Gather</h1>
       <Button btntext="Join Waitlist" />
     </div>

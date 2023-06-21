@@ -55,3 +55,10 @@ body {
   background-color: var(--cream);
   color: var(--wine);
 }
+
+// Global, Flex, Column
+.flx-clmn-cntr {
+  display: flex,;
+  flex-direction: column;
+  align-items: center;
+}
