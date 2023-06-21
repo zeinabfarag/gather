@@ -1,11 +1,18 @@
 import "./Tagline.scss";
+import { createElement } from "react";
 
-const Tagline = ({ text, icon, subtext }) => {
+const Tagline = ({ taglines }) => {
   return (
     <div className="tagline flx-clmn-cntr">
-      <p>{icon}</p>
-      <h1 dangerouslySetInnerHTML={{ __html: text }} />
-      <p dangerouslySetInnerHTML={{ __html: subtext }} />
+      {taglines.map(({ icon, text }, i) => (
+        <div className="tagline" key={i}>
+          <div className="tagline-icon">{createElement(icon)}</div>
+          <div
+            className="tagline-text"
+            dangerouslySetInnerHTML={{ __html: text }}
+          />
+        </div>
+      ))}
     </div>
   );
 };

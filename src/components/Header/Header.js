@@ -1,5 +1,7 @@
 import "./Header.scss";
 import Button from "../Button/Button";
+import { createElement } from "react";
+import { ReactComponent as GatherLogo } from "../../assets/gather-logo.svg";
 
 const Header = () => {
   return (

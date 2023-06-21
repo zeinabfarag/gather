@@ -1,10 +1,19 @@
 import "./Headline.scss";
+import React from "react";
+import { createElement } from "react";
 
-const Headline = ({ text, icon }) => {
+const Headline = ({ headlines }) => {
   return (
     <div className="headline flx-clmn-cntr">
-      <p>{icon}</p>
-      <div dangerouslySetInnerHTML={{ __html: text }} />
+      {headlines.map(({ icon, text }, i) => (
+        <div className="headline-feature" key={i}>
+          <div className="headline-icon">{createElement(icon)}</div>
+          <div
+            className="headline-text"
+            dangerouslySetInnerHTML={{ __html: text }}
+          />
+        </div>
+      ))}
     </div>
   );
 };

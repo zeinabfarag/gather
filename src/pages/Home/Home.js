@@ -14,16 +14,12 @@ const Home = () => {
       <main>
         {/* Headline */}
         <div className="headline-section">
-          {HomeText.headline.map(({ icon, text }, i) => (
-            <Headline key={i} text={text} icon={icon} />
-          ))}
+          <Headline headlines={HomeText.headline} />
         </div>
 
         {/* Tag Lines */}
         <div className="tagline-section">
-          {HomeText.taglines.map(({ icon, text, subtext }, i) => (
-            <Tagline key={i} text={text} icon={icon} subtext={subtext} />
-          ))}
+          <Tagline taglines={HomeText.taglines} />
         </div>
 
         {/* Key Features */}
