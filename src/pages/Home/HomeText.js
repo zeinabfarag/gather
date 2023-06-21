@@ -1,3 +1,5 @@
+import { ReactComponent as Heart } from "../../assets/gather-heart.svg";
+
 const data = {
   headline: [
     {
@@ -27,15 +29,15 @@ const data = {
   ],
   features: [
     {
-      icon: "idk",
+      icon: Heart,
       text: " <span> Customize </span> your schedule sync with unique social circles.",
     },
     {
-      icon: "idk",
+      icon: Heart,
       text: "<span> Plan </span> the entire hang out in app, and directly <span> sync </span>  it to your calendar",
     },
     {
-      icon: "idk",
+      icon: Heart,
       text: "<span> Create </span> spontaneous moments with your loved ones",
     },
   ],
