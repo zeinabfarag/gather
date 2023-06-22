@@ -20,19 +20,19 @@ const data = {
   taglines: [
     {
       icon: Wave,
-      text: "<span>Streamline</span> your social life with <span>Gather</span>",
+      text: "<span> Streamline </span> your social life with <span> Gather </span>",
       subtext: "The antidote to scheduling chaos",
     },
     {
       icon: HandWave,
-      text: "<span>Say goodbye</span> to planning frustration",
+      text: "<span> Say goodbye </span> to planning frustration",
       subtext: "Say hello to stress-free quality time",
     },
   ],
   features: [
     {
       icon: Clock,
-      text: " <span> Customize </span> your schedule sync with unique social circles.",
+      text: " <span> Customize </span> your schedule sync with unique social circles",
     },
     {
       icon: Calendar,

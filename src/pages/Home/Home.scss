@@ -6,9 +6,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
 
+    .headline-image{
+      margin-top: 60px;
+    }
+
+    .taglines-section {
+      margin-top: 15px;
+      margin-bottom: 45px;
+    }
+
+    .signup-section{
+      margin-top: 45px;
+      margin-bottom: 105px;
+    }
+
+  }
+  
   .arrow {
-    padding: 100px 0px;
+    margin: 60px 0;
   }
 }

@@ -1,8 +1,11 @@
 .key-features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  h1 {
-    padding: 100px 0px;
-  }
+  gap: 80px;
+  margin: 45px 0;
+
   .key-feature {
     font-size: 20px;
     border: 1.5px solid var(--wine);
@@ -16,12 +19,8 @@
     padding: 30px;
     height: 220px;
     width: 220px;
-    &:not(:last-child) {
-      margin-bottom: 50px;
-    }
-
     &-icon {
-      padding-bottom: 30px;
+      margin-bottom: 25px;
     }
     &-text {
       width: 200px;
