@@ -20,7 +20,9 @@ const Home = () => {
         </div>
 
         {/* Headline Image */}
-        <div className="headline-image">{createElement(Illustration)}</div>
+        <div className="headline-image" data-aos="zoom-in" data-aos-delay={750}>
+          {createElement(Illustration)}
+        </div>
 
         {/* Arrow */}
         <div className="arrow">{createElement(Arrow)}</div>

@@ -4,12 +4,13 @@
   align-items: center;
   justify-content: center;
   &-header {
+    display: flex;
     font-size: 24px;
     padding-bottom: 25px;
-    
-    span {
+    &-text {
       font-style: italic;
       font-weight: 600;
+      padding-right: 7px;
     }
   }
 }

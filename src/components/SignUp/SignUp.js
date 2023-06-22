@@ -5,9 +5,18 @@ const SignUp = () => {
   return (
     <div className="signup">
       <div className="signup-header">
-        <span>Sign up </span> to our waitlist
+        <div
+          data-aos="zoom-in-down"
+          data-aos-delay={50}
+          className="signup-header-text"
+        >
+          Sign up
+        </div>
+        to our waitlist
       </div>
-      <Button text={"Join Waitlist"} />
+      <div data-aos="fade-up" data-aos-delay={150}>
+        <Button text={"Join Waitlist"} />
+      </div>
     </div>
   );
 };

@@ -6,7 +6,11 @@ const Tagline = ({ taglines }) => {
   return (
     <div className="taglines flx-clmn-cntr">
       {/* Tagline 1 */}
-      <div className="tagline flx-clmn-cntr bold-span" key={0}>
+      <div
+        className="tagline flx-clmn-cntr bold-span"
+        data-aos="fade-right"
+        data-aos-delay={0}
+      >
         <div className="tagline-icon">{createElement(taglines[0].icon)}</div>
         <div
           className="tagline-text"
@@ -21,7 +25,11 @@ const Tagline = ({ taglines }) => {
       <div className="dots">{createElement(ThreeDots)}</div>
 
       {/* Tagline 2 */}
-      <div className="tagline flx-clmn-cntr bold-span" key={1}>
+      <div
+        className="tagline flx-clmn-cntr bold-span"
+        data-aos="fade-left"
+        data-aos-delay={250}
+      >
         <div className="tagline-icon">{createElement(taglines[1].icon)}</div>
         <div
           className="tagline-text"

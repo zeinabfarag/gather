@@ -6,7 +6,12 @@ const Headline = ({ headlines }) => {
   return (
     <div className="headlines flx-clmn-cntr">
       {headlines.map(({ icon, text }, i) => (
-        <div className="headline flx-clmn-cntr bold-span" key={i}>
+        <div
+          className="headline flx-clmn-cntr bold-span"
+          key={i}
+          data-aos="fade-up"
+          data-aos-delay={i * 250}
+        >
           <div className="headline-icon">{createElement(icon)}</div>
           <div
             className="headline-text"
