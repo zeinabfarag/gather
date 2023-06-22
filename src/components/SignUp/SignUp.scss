@@ -5,11 +5,13 @@
   justify-content: center;
   padding-bottom: 115px;
   &-header {
+    display: flex;
     font-size: 24px;
     padding-bottom: 25px;
-    span {
+    &-text {
       font-style: italic;
       font-weight: 600;
+      padding-right: 7px;
     }
   }
 }

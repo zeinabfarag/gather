@@ -6,7 +6,12 @@ const KeyFeatures = ({ features }) => {
     <div className="key-features">
       <h1>Key Features</h1>
       {features.map(({ icon, text }, i) => (
-        <div className="key-feature" key={i} data-aos="fade-up">
+        <div
+          className="key-feature"
+          key={i}
+          data-aos={`${i % 2 === 0 ? "fade-right" : "fade-left"}`}
+          data-aos-delay={i * 250}
+        >
           <div className="key-feature-icon">{createElement(icon)}</div>
           <div
             className="key-feature-text"
