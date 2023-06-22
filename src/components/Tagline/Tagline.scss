@@ -1,10 +1,16 @@
 .taglines {
-    margin: 3vh 0;
     max-width: 75vw;
 
     .tagline {
+        &-icon {
+            margin-bottom: 25px;
+        }
+
         text-align: center;
         font-size: 2rem;
-        gap: 3vh;
+    }
+
+    .dots{
+        margin: 105px 0;
     }
 }

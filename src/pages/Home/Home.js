@@ -26,7 +26,7 @@ const Home = () => {
         <div className="arrow">{createElement(Arrow)}</div>
 
         {/* Tag Lines */}
-        <div className="tagline-section">
+        <div className="taglines-section">
           <Tagline taglines={HomeText.taglines} />
         </div>
 
