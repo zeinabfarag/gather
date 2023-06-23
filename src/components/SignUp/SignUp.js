@@ -1,16 +1,25 @@
-import "./SignUp.scss";
+import { useState } from "react";
 import Button from "../Button/Button";
-// import { saveToDatabase } from "./firebase";
+import { saveToDatabase } from "../../firebase";
+
+import "./SignUp.scss";
 
 const SignUp = () => {
-  // Handle Join Waitlist Button Click
-  const handleSubmit = (event) => {
+  const [join, setJoin] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [isInterested, setIsInterested] = useState(false);
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    const name = event.target.name.value;
-    const email = event.target.email.value;
-    const isInterested = event.target.isInterested.checked;
-    // saveToDatabase(name, email, isInterested);
-    event.target.reset();
+    await saveToDatabase({ name, email, isInterested });
+  };
+
+  const joinWaitlist = () => {
+    setJoin(true);
+    setTimeout(() => {
+      window.scrollBy(0, 600);
+    }, 0);
   };
 
   return (
@@ -26,27 +35,49 @@ const SignUp = () => {
         </div>
         to our waitlist
       </div>
-      <div data-aos="fade-up" data-aos-delay={150} data-aos-duration={850}>
-        <Button text={"Join Waitlist"} />
-      </div>
-      <form className="signup-form border-main flx-clmn-cntr">
-        <div className="signup-form-input">
-          <div>Name</div>
-          <input type="text" required />
+      {!join ? (
+        <div data-aos="fade-up" data-aos-delay={150} data-aos-duration={850}>
+          <Button text={"Join Waitlist"} onClick={joinWaitlist} />
         </div>
-        <div className="signup-form-input">
-          <div>Email</div>
-          <input type="email" required />
-        </div>
-        <div className="signup-form-checkbox">
-          <input type="checkbox" />
-          <div>
-            I would like to participate in or provide feedback for product
-            development.
+      ) : (
+        <form
+          className="signup-form border-main flx-clmn-cntr"
+          onSubmit={handleSubmit}
+          data-aos="flip-up"
+          data-aos-delay={250}
+        >
+          <div className="signup-form-input">
+            <div>Name</div>
+            <input
+              type="text"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </div>
-        </div>
-        <Button text={"Submit"} type="submit" fullWidth />
-      </form>
+          <div className="signup-form-input">
+            <div>Email</div>
+            <input
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div className="signup-form-checkbox">
+            <input
+              type="checkbox"
+              checked={isInterested}
+              onChange={() => setIsInterested(!isInterested)}
+            />
+            <div>
+              I would like to participate in or provide feedback for product
+              development.
+            </div>
+          </div>
+          <Button text={"Submit"} type="submit" fullWidth />
+        </form>
+      )}
     </div>
   );
 };
