@@ -11,9 +11,9 @@ const SignUp = ({ showJoinForm, joinWaitlist, formRef }) => {
   const [isInterested, setIsInterested] = useState(false);
   const [signedUp, setSignedUp] = useState(false);
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    await saveToDatabase({ name, email, isInterested });
+    saveToDatabase({ name, email, isInterested });
     setSignedUp(true);
   };
 
