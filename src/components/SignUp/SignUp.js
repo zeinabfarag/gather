@@ -76,7 +76,7 @@ const SignUp = ({ showJoinForm, joinWaitlist, formRef }) => {
                   checked={isInterested}
                   onChange={() => setIsInterested(!isInterested)}
                 />
-                <div>
+                <div onClick={() => setIsInterested(!isInterested)}>
                   I would like to participate in or provide feedback for product
                   development.
                 </div>
