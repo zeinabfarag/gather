@@ -35,7 +35,7 @@ const Home = () => {
         </div>
 
         {/* Headline Image */}
-        <div className="headline-image" data-aos="zoom-in">
+        <div className="headline-image" data-aos="fade-up" data-aos-delay={750}>
           {createElement(Illustration)}
         </div>
 
