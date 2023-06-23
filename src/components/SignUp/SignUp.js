@@ -47,7 +47,10 @@ const SignUp = ({ showJoinForm, joinWaitlist, formRef }) => {
               {createElement(Mail)}
 
               <div className="signup-submitted-text">
-                <span>Thank you</span> for signing up to our waitlist!
+                <span data-aos="zoom-out" data-aos-duration="2000">
+                  Thank you
+                </span>{" "}
+                for signing up to our waitlist!
               </div>
             </div>
           ) : (
