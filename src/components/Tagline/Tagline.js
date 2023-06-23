@@ -7,11 +7,7 @@ const Tagline = ({ taglines }) => {
   return (
     <div className="taglines flx-clmn-cntr">
       {/* Tagline 1 */}
-      <div
-        className="tagline flx-clmn-cntr bold-span"
-        data-aos="fade-right"
-        data-aos-delay={0}
-      >
+      <div className="tagline flx-clmn-cntr bold-span" data-aos="fade-right">
         <div className="tagline-icon">{createElement(taglines[0].icon)}</div>
         <div
           className="tagline-text"

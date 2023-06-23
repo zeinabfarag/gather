@@ -35,11 +35,7 @@ const Home = () => {
         </div>
 
         {/* Headline Image */}
-        <div
-          className="headline-image"
-          data-aos="zoom-in"
-          data-aos-duration={850}
-        >
+        <div className="headline-image" data-aos="zoom-in">
           {createElement(Illustration)}
         </div>
 

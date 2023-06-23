@@ -6,7 +6,7 @@ const data = {
   headline: [
     {
       icon: Coffee,
-      text: "<span data-aos='zoom-out'data-aos-duration= '2000'> Eliminate </span> the hangout that never happens",
+      text: "<span data-aos='zoom-out'> Eliminate </span> the hangout that never happens",
     },
     {
       icon: X,

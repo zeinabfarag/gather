@@ -23,7 +23,6 @@ const SignUp = ({ showJoinForm, joinWaitlist, formRef }) => {
         <div
           data-aos="zoom-in-down"
           data-aos-delay={50}
-          data-aos-duration={850}
           className="signup-header-text"
         >
           Sign up
@@ -31,7 +30,7 @@ const SignUp = ({ showJoinForm, joinWaitlist, formRef }) => {
         to our waitlist
       </div>
       {!showJoinForm ? (
-        <div data-aos="fade-up" data-aos-delay={150} data-aos-duration={850}>
+        <div data-aos="fade-up" data-aos-delay={150}>
           <Button text={"Join Waitlist"} onClick={joinWaitlist} />
         </div>
       ) : (
@@ -47,10 +46,8 @@ const SignUp = ({ showJoinForm, joinWaitlist, formRef }) => {
               {createElement(Mail)}
 
               <div className="signup-submitted-text">
-                <span data-aos="zoom-out" data-aos-duration="2000">
-                  Thank you
-                </span>{" "}
-                for signing up to our waitlist!
+                <span data-aos="zoom-out">Thank you</span> for signing up to our
+                waitlist!
               </div>
             </div>
           ) : (
