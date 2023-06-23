@@ -4,8 +4,7 @@ import { saveToDatabase } from "../../firebase";
 
 import "./SignUp.scss";
 
-const SignUp = () => {
-  const [join, setJoin] = useState(false);
+const SignUp = ({ showJoinForm, joinWaitlist }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [isInterested, setIsInterested] = useState(false);
@@ -13,13 +12,6 @@ const SignUp = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     await saveToDatabase({ name, email, isInterested });
-  };
-
-  const joinWaitlist = () => {
-    setJoin(true);
-    setTimeout(() => {
-      window.scrollBy(0, 600);
-    }, 0);
   };
 
   return (
@@ -35,7 +27,7 @@ const SignUp = () => {
         </div>
         to our waitlist
       </div>
-      {!join ? (
+      {!showJoinForm ? (
         <div data-aos="fade-up" data-aos-delay={150} data-aos-duration={850}>
           <Button text={"Join Waitlist"} onClick={joinWaitlist} />
         </div>

@@ -1,6 +1,7 @@
-import "./Tagline.scss";
 import { createElement } from "react";
 import { ThreeDots } from "../../assets";
+
+import "./Tagline.scss";
 
 const Tagline = ({ taglines }) => {
   return (

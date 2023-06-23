@@ -1,4 +1,5 @@
 import { createElement } from "react";
+
 import "./KeyFeatures.scss";
 
 const KeyFeatures = ({ features }) => {

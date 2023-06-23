@@ -1,4 +1,4 @@
-import "./Home.scss";
+import { useState } from "react";
 import Header from "../../components/Header/Header";
 import HomeText from "./HomeText";
 import Headline from "../../components/Headline/Headline";
@@ -9,10 +9,21 @@ import KeyFeatures from "../../components/KeyFeatures/KeyFeatures";
 import { createElement } from "react";
 import { Illustration, Arrow } from "../../assets";
 
+import "./Home.scss";
+
 const Home = () => {
+  const [showJoinForm, setShowJoinForm] = useState(false);
+
+  const joinWaitlist = () => {
+    setShowJoinForm(true);
+    setTimeout(() => {
+      window.scrollBy(0, 100000);
+    }, 0);
+  };
+
   return (
     <div className="home">
-      <Header />
+      <Header joinWaitlist={joinWaitlist} />
       <main>
         {/* Headline */}
         <div className="headline-section">
@@ -45,7 +56,7 @@ const Home = () => {
 
         {/* Sign Up*/}
         <div className="signup-section">
-          <SignUp />
+          <SignUp showJoinForm={showJoinForm} joinWaitlist={joinWaitlist} />
         </div>
       </main>
       {/* Footer */}
