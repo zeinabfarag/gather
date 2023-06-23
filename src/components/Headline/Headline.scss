@@ -1,11 +1,10 @@
 .headlines {
-    margin-top: 45px;
-    gap: 30px;
-    max-width: 75vw;
+  gap: 30px;
+  max-width: 75vw;
 
-    :first-child {
-        text-align: center;
-        font-size: 1.5rem;
-        gap: 30px;
-    }
+  :first-child {
+    text-align: center;
+    font-size: 1.5rem;
+    gap: 30px;
+  }
 }

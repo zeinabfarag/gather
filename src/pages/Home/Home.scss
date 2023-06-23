@@ -1,12 +1,13 @@
 .home {
   main {
+    overflow: hidden;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    .headline-image{
+    .headline-image {
       margin-top: 60px;
     }
 
@@ -15,13 +16,12 @@
       margin-bottom: 45px;
     }
 
-    .signup-section{
+    .signup-section {
       margin-top: 45px;
       margin-bottom: 105px;
     }
-
   }
-  
+
   .arrow {
     margin: 60px 0;
   }

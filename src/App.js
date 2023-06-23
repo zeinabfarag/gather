@@ -6,7 +6,9 @@ import "aos/dist/aos.css";
 
 const App = () => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: 1000,
+    });
     AOS.refresh();
   }, []);
 
