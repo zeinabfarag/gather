@@ -15,14 +15,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-const saveToDatabase = async (name, email, isInterested) => {
+const saveToDatabase = async (data) => {
   try {
-    const docRef = await addDoc(collection(db, "waitlist"), {
-      name: name,
-      email: email,
-      isInterested: isInterested,
-    });
-    console.log("Document written with ID: ", docRef.id);
+    await addDoc(collection(db, "waitlist"), data);
   } catch (error) {
     console.error("Error adding document: ", error);
   }

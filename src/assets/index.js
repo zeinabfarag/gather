@@ -10,3 +10,4 @@ export { ReactComponent as Logo } from "./gather-logo.svg";
 export { ReactComponent as ThreeDots } from "./gather-threedots.svg";
 export { ReactComponent as Wave } from "./gather-wave.svg";
 export { ReactComponent as X } from "./gather-x.svg";
+export { ReactComponent as Mail } from "./gather-mail.svg";
