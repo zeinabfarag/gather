@@ -1,6 +1,6 @@
 import "./SignUp.scss";
 import Button from "../Button/Button";
-import { saveToDatabase } from "./firebase";
+// import { saveToDatabase } from "./firebase";
 
 const SignUp = () => {
   // Handle Join Waitlist Button Click
@@ -9,7 +9,7 @@ const SignUp = () => {
     const name = event.target.name.value;
     const email = event.target.email.value;
     const isInterested = event.target.isInterested.checked;
-    saveToDatabase(name, email, isInterested);
+    // saveToDatabase(name, email, isInterested);
     event.target.reset();
   };
 
