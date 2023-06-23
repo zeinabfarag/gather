@@ -10,7 +10,7 @@ const KeyFeatures = ({ features }) => {
         <div
           className="key-feature border-main"
           key={i}
-          data-aos={`${i % 2 === 0 ? "fade-right" : "fade-left"}`}
+          data-aos="zoom-in-up"
           data-aos-delay={i * 250}
         >
           <div className="key-feature-icon">{createElement(icon)}</div>
