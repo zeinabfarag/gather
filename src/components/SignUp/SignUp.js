@@ -4,7 +4,7 @@ import { saveToDatabase } from "../../firebase";
 
 import "./SignUp.scss";
 
-const SignUp = ({ showJoinForm, joinWaitlist }) => {
+const SignUp = ({ showJoinForm, joinWaitlist, formRef }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [isInterested, setIsInterested] = useState(false);
@@ -33,6 +33,7 @@ const SignUp = ({ showJoinForm, joinWaitlist }) => {
         </div>
       ) : (
         <form
+          ref={formRef}
           className="signup-form border-main flx-clmn-cntr"
           onSubmit={handleSubmit}
           data-aos="flip-up"

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Header from "../../components/Header/Header";
 import HomeText from "./HomeText";
 import Headline from "../../components/Headline/Headline";
@@ -14,10 +14,14 @@ import "./Home.scss";
 const Home = () => {
   const [showJoinForm, setShowJoinForm] = useState(false);
 
+  const formRef = useRef(null);
+
   const joinWaitlist = () => {
     setShowJoinForm(true);
     setTimeout(() => {
-      window.scrollBy(0, 100000);
+      if (formRef.current) {
+        formRef.current.scrollIntoView();
+      }
     }, 0);
   };
 
@@ -56,7 +60,11 @@ const Home = () => {
 
         {/* Sign Up*/}
         <div className="signup-section">
-          <SignUp showJoinForm={showJoinForm} joinWaitlist={joinWaitlist} />
+          <SignUp
+            showJoinForm={showJoinForm}
+            joinWaitlist={joinWaitlist}
+            formRef={formRef}
+          />
         </div>
       </main>
       {/* Footer */}
