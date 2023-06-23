@@ -3,7 +3,7 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <div className="footer">
-      <a className="footer-link" href="https://google.com">
+      <a className="footer-link" href="mailto:gatherio2023@gmail.com">
         Contact us
       </a>
       <div className="footer-text">
