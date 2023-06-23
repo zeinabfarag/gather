@@ -7,7 +7,7 @@ const KeyFeatures = ({ features }) => {
       <h1>Key Features</h1>
       {features.map(({ icon, text }, i) => (
         <div
-          className="key-feature"
+          className="key-feature border-main"
           key={i}
           data-aos={`${i % 2 === 0 ? "fade-right" : "fade-left"}`}
           data-aos-delay={i * 250}

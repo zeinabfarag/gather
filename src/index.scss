@@ -50,6 +50,11 @@ p {
   font-size: 1rem;
 }
 
+input {
+  outline: none;
+  accent-color: var(--wine);
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -58,7 +63,7 @@ body {
   color: var(--wine);
 }
 
-// Global, Flex, Column
+// Global Classes
 .flx-clmn-cntr {
   display: flex;
   flex-direction: column;
@@ -70,4 +75,9 @@ body {
     font-style: italic;
     font-weight: bold;
   }
+}
+
+.border-main {
+  border: 1.5px solid var(--wine);
+  border-radius: 55px;
 }
